@@ -1,31 +1,32 @@
 @import url("https://fonts.googleapis.com/css?family=Lora|Encode+Sans+Expanded");
 html, body {
-  padding: 0.5rem 1rem;
   font-size: 100%;
   line-height: 1.5rem;
   font-family: "Lora", serif;
   color: black; }
 
-header {
-  border-bottom: 1px solid black;
-  position: sticky; }
-  header nav {
-    padding: 1rem 0;
-    text-align: right; }
-    header nav a, header nav a:active, header nav a:link, header nav a:visited {
-      padding: 0.5rem;
-      font-size: 1.4rem;
-      font-variant: small-caps;
-      color: black;
-      text-decoration: none;
-      transition: background-color 0.5s, color 0.5s; }
-    header nav a:hover {
-      background-color: black;
-      color: white;
-      border-radius: 5px;
-      transition: background-color 1s, color 0.5s; }
+body {
+  padding: 1rem 2rem; }
+
+header nav {
+  padding: 1rem 0;
+  text-align: right; }
+  header nav a, header nav a:active, header nav a:link, header nav a:visited {
+    padding: 0.5rem;
+    font-size: 1.4rem;
+    font-variant: small-caps;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.5s, color 0.5s; }
+  header nav a:hover {
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 1s, color 0.5s; }
 
 section {
+  clear: both;
   padding: 2rem 0; }
 
 section#about div {
@@ -40,11 +41,10 @@ section#about img {
   height: auto;
   border-radius: 5px; }
 
-section#portfolio {
-  clear: both;
+section#portfolio div.card-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
-  grid-gap: 5%; }
+  grid-template-columns: 1;
+  grid-gap: 1%; }
 
 section#contact input, section#contact textarea, section#contact button {
   display: block;
@@ -62,21 +62,17 @@ section#contact button:hover {
   transition: background-color 0.5s, color 0.5s; }
 
 footer {
-  text-align: center;
-  border-top: 1px solid black; }
+  text-align: center; }
   footer img {
-    border-radius: 50%;
-    max-width: 5rem;
-    transition: box-shadow 0.5s; }
-  footer a:hover img {
-    box-shadow: 1px 2px 6px black;
-    transition: box-shadow 0.5s; }
+    margin: 0 0.5rem;
+    max-width: 5rem; }
 
 h1 {
   padding: 2rem 0;
   font: 3rem "Encode Sans Expanded", sans-serif; }
 
 h2 {
+  margin: 0 0 1rem 0;
   padding: 1rem 0;
   font: 1.5rem "Encode Sans Expanded", sans-serif;
   color: black; }
@@ -85,6 +81,9 @@ h3 {
   padding: 1rem 0;
   font: 1.3rem "Encode Sans Expanded", sans-serif;
   color: black; }
+
+hr {
+  border-width: 1px; }
 
 p, input, textarea, button {
   font-size: 1.2rem;
@@ -120,6 +119,10 @@ div.card p {
   body {
     width: 80%;
     margin: 0 auto; }
+
+  section#portfolio div.card-grid {
+    grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+    grid-gap: 5%; }
 
   section#contact input, section#contact textarea, section#contact button {
     width: 50%; } }
