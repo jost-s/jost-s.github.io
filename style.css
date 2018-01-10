@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css?family=Lora|Encode+Sans+Expanded");
+html, body {
+  padding: 0.5rem 1rem;
+  font-size: 100%;
+  line-height: 1.5rem;
+  font-family: "Lora", serif;
+  color: black; }
+
+header {
+  border-bottom: 1px solid black;
+  position: sticky; }
+  header nav {
+    padding: 1rem 0;
+    text-align: right; }
+    header nav a, header nav a:active, header nav a:link, header nav a:visited {
+      padding: 0.5rem;
+      font-size: 1.4rem;
+      font-variant: small-caps;
+      color: black;
+      text-decoration: none;
+      transition: background-color 0.5s, color 0.5s; }
+    header nav a:hover {
+      background-color: black;
+      color: white;
+      border-radius: 5px;
+      transition: background-color 1s, color 0.5s; }
+
+section {
+  padding: 2rem 0; }
+
+section#about div {
+  display: inline-block;
+  width: 60%; }
+section#about p {
+  padding: 1rem 0;
+  text-align: justify; }
+section#about img {
+  float: right;
+  width: 30%;
+  height: auto;
+  border-radius: 5px; }
+
+section#portfolio {
+  clear: both;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+  grid-gap: 5%; }
+
+section#contact input, section#contact textarea, section#contact button {
+  display: block;
+  width: 100%;
+  margin: 1rem 0;
+  padding: 0.5rem;
+  font-family: "Lora", serif; }
+section#contact button {
+  background-color: black;
+  color: white;
+  transition: background-color 0.5s, color 0.5s; }
+section#contact button:hover {
+  background-color: white;
+  color: black;
+  transition: background-color 0.5s, color 0.5s; }
+
+footer {
+  text-align: center;
+  border-top: 1px solid black; }
+  footer img {
+    border-radius: 50%;
+    max-width: 5rem;
+    transition: box-shadow 0.5s; }
+  footer a:hover img {
+    box-shadow: 1px 2px 6px black;
+    transition: box-shadow 0.5s; }
+
+h1 {
+  padding: 2rem 0;
+  font: 3rem "Encode Sans Expanded", sans-serif; }
+
+h2 {
+  padding: 1rem 0;
+  font: 1.5rem "Encode Sans Expanded", sans-serif;
+  color: black; }
+
+h3 {
+  padding: 1rem 0;
+  font: 1.3rem "Encode Sans Expanded", sans-serif;
+  color: black; }
+
+p, input, textarea, button {
+  font-size: 1.2rem;
+  line-height: 1.8rem; }
+
+ul {
+  font-size: 1.2rem;
+  list-style-type: disc;
+  padding: 0.5rem 4rem; }
+  ul li {
+    margin: 0.5rem 0; }
+
+div.card {
+  padding: 0.5rem 2rem;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 1px 2px 6px -1px black;
+  transition: box-shadow 0.3s; }
+  div.card img {
+    padding: 4px;
+    max-width: 14rem;
+    max-height: 14rem;
+    border: 1px solid black; }
+
+div.card:hover {
+  box-shadow: 3px 5px 10px -1px black;
+  transition: box-shadow 0.3s; }
+
+div.card p {
+  padding: 1rem 0; }
+
+@media only screen and (min-width: 768px) {
+  body {
+    width: 80%;
+    margin: 0 auto; }
+
+  section#contact input, section#contact textarea, section#contact button {
+    width: 50%; } }
+
+/*# sourceMappingURL=style.css.map */
