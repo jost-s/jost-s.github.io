@@ -6,7 +6,9 @@ html, body {
   color: black; }
 
 body {
-  padding: 1rem 2rem; }
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  line-height: 1.8rem; }
 
 header nav {
   padding: 1rem 0;
@@ -85,7 +87,7 @@ h3 {
 hr {
   border-width: 1px; }
 
-p, input, textarea, button {
+input, textarea, button {
   font-size: 1.2rem;
   line-height: 1.8rem; }
 
@@ -95,6 +97,9 @@ ul {
   padding: 0.5rem 4rem; }
   ul li {
     margin: 0.5rem 0; }
+
+strong {
+  font-weight: bold; }
 
 div.card {
   padding: 0.5rem 2rem;
