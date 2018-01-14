@@ -41,7 +41,9 @@ section#about img {
   float: right;
   width: 30%;
   height: auto;
-  border-radius: 5px; }
+  border-top-left-radius: 100%;
+  border-top-right-radius: 100%;
+  border-bottom-left-radius: 100%; }
 
 section#portfolio div.card-grid {
   display: grid;
